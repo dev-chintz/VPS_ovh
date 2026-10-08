@@ -1,0 +1,18 @@
+{
+  "name": "ovh-vps-monitor-netlify",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Monitor dostępności OVHcloud VPS-2 2027 z powiadomieniami na Telegram (Netlify Scheduled Function)",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "dry-run": "node scripts/cli.mjs dry-run",
+    "chat-id": "node scripts/cli.mjs chat-id",
+    "test-telegram": "node scripts/cli.mjs test-telegram"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^11.1.3"
+  }
+}

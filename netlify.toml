@@ -1,0 +1,10 @@
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+[build.environment]
+  # @netlify/blobs wymaga Node.js 22.12 lub nowszego
+  NODE_VERSION = "22"
+
+[functions]
+  node_bundler = "esbuild"
